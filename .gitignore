@@ -12,37 +12,6 @@ MemoryCaptures/
 # Crash reports
 sysinfo.txt
 
-# User-specific settings
-UserSettings/
-.vscode/
-.idea/
-*.csproj
-*.sln
-*.user
-*.pidb
-*.booproj
-*.suo
-
-# OS-specific files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Package manager
-Packages/manifest.json
-Packages/packages-lock.json
-
-# Unity Version Control (optional)
-.vcs/
-
-# ========================
-# Optional: Ignore Auto-generated Asset files
-# ========================
-*.unitypackage
-*.asset
-*.mat
-*.meta
-
 # ========================
 # Git Large File Storage (if used)
 # ========================
@@ -51,5 +20,4 @@ Packages/packages-lock.json
 *.fbx filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 
-# Uncomment to ignore all .meta files (not recommended if using Unity)
-# *.meta
+
