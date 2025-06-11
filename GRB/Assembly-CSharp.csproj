@@ -48,7 +48,7 @@
     <Analyzer Include="D:\unity\6000.1.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\NizawaTest.cs" />
+    <Compile Include="Assets\BattleScript\CursorController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
