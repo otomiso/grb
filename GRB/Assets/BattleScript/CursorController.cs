@@ -1,19 +1,19 @@
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class CursorController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public List<GameObject> playerUnits; // 自軍ユニット一覧
     public GameObject cursor; // カーソル
     private GameObject currentUnit; // カーソル対象キャラ
+    private Tilemap tilemap;
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (currentUnit != null && cursor.activeSelf) // カーソル追従
@@ -45,5 +45,12 @@ public class CursorController : MonoBehaviour
         cursor.transform.position = leadUnit.transform.position + new Vector3(0, 0.5f, 0);
 
         currentUnit = leadUnit;
+    }
+    void Awake() // タイルマップをファインド
+    {
+        if (tilemap == null)
+        {
+            tilemap = FindFirstObjectByType<Tilemap>();
+        }
     }
 }
