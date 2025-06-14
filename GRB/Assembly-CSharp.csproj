@@ -49,8 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BattleScript\CursorController.cs" />
+    <Compile Include="Assets\BattleScript\TurnManager.cs" />
     <Compile Include="Assets\BattleScript\CharacterSpawner.cs" />
-    <Compile Include="Assets\BattleScript\BattleManager.cs" />
+    <Compile Include="Assets\BattleScript\MapManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
