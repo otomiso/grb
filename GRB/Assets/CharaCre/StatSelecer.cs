@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
-public class StatSelector : MonoBehaviour
+public class StatSelecter : MonoBehaviour
 {
     public TMP_Dropdown  dropdownHP;
     public TMP_Dropdown  dropdownMP;
@@ -12,14 +12,14 @@ public class StatSelector : MonoBehaviour
     public TMP_Dropdown  dropdownSpeed;
 
     public Button confirmButton;
-    public CharactorStatus charactorStatus;
+    public CharacterStatus characterStatus;
 
     private List<TMP_Dropdown> allDropdowns;
 
     private const int minValue = 30;
     private const int maxValue = 300;
     private const int step = 10;
-    private const int totalMax = 450;
+    private const int totalMax = 550;
 
     void Start()
     {
@@ -58,20 +58,20 @@ public class StatSelector : MonoBehaviour
     {
         if (!confirmButton.interactable) return;
 
-        charactorStatus.MAXHP = GetDropdownValue(dropdownHP);
-        charactorStatus.MAXMP = GetDropdownValue(dropdownMP);
-        charactorStatus.attack = GetDropdownValue(dropdownAttack);
-        charactorStatus.block = GetDropdownValue(dropdownBlock);
-        charactorStatus.defense = GetDropdownValue(dropdownDefense);
-        charactorStatus.speed = GetDropdownValue(dropdownSpeed);
+        characterStatus.MAXHP = GetDropdownValue(dropdownHP);
+        characterStatus.MAXMP = GetDropdownValue(dropdownMP);
+        characterStatus.attack = GetDropdownValue(dropdownAttack);
+        characterStatus.block = GetDropdownValue(dropdownBlock);
+        characterStatus.defense = GetDropdownValue(dropdownDefense);
+        characterStatus.speed = GetDropdownValue(dropdownSpeed);
 
         Debug.Log("ステータスを設定しました！");
-        Debug.Log(charactorStatus.HP);
-        Debug.Log(charactorStatus.MP);
-        Debug.Log(charactorStatus.attack);
-        Debug.Log(charactorStatus.block);
-        Debug.Log(charactorStatus.defense);
-        Debug.Log(charactorStatus.speed);
+        Debug.Log(characterStatus.MAXHP);
+        Debug.Log(characterStatus.MAXMP);
+        Debug.Log(characterStatus.attack);
+        Debug.Log(characterStatus.block);
+        Debug.Log(characterStatus.defense);
+        Debug.Log(characterStatus.speed);
     }
 
     int GetDropdownValue(TMP_Dropdown dropdown)

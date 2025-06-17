@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;  // List を使うには必要
 
-public class CharactorStatus: MonoBehaviour
+public class CharacterStatus: MonoBehaviour
 {
   public int rarity;//レアリティ
   public string attribute;//属性
