@@ -1,0 +1,25 @@
+{
+  "rarity": 3,
+  "attribute": "炎",
+  "name": "主人公",
+  "equipableWeapons": [
+    "剣",
+    "槍",
+    "弓"
+  ],
+  "skillName": "不屈の魂",
+  "skillDescription": "HPが50%以下になると攻撃力が20%上昇する。",
+  "mobility": 5,
+  "MAXHP": 100,
+  "MAXMP": 90,
+  "attack": 100,
+  "block": 80,
+  "defense": 80,
+  "speed": 100,
+  "skillA": "フレイムスラッシュ",
+  "skillB": "バーニングストーム",
+  "skillC": "フェニックスドライブ",
+  "skillADescription": "炎属性の斬撃で敵単体に大ダメージを与える。",
+  "skillBDescription": "広範囲に炎を巻き起こして複数の敵に中ダメージ。",
+  "skillCDescription": "MP全消費で超強力な攻撃と自己回復を行う。"
+}
